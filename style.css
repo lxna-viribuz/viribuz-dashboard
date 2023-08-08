@@ -1,0 +1,209 @@
+:root {
+  --Primary: #6941c6;
+  --Secondary: #ffffff;
+  --Fill: #7f56d9;
+}
+
+body {
+  background-color: var(--Primary);
+}
+
+a {
+  text-decoration: none;
+}
+
+.d-hidden {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .d-hidden {
+    display: block !important;
+  }
+
+  nav {
+    width: 0px !important;
+  }
+
+  .nav-burger-button {
+    float: right !important;
+    position: fixed;
+    right: 0;
+  }
+
+  .nav-burger-icon {
+    padding: 10px;
+    margin: 20px;
+  }
+
+  .nav-burger-icon:hover {
+    background-color: var(--Fill);
+  }
+
+  .nav-burger-button:hover + .mobile-nav {
+    width: 100%;
+  }
+
+  .mobile-nav {
+    display: block !important;
+    position: fixed;
+    height: 100vh;
+    width: 0;
+    right: 0;
+    margin-top: 70px;
+    background-color: #6941c6;
+    border: 1px solid black;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .bottom-mobile-nav {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+
+  .dashboard {
+    border-top-left-radius: 0px !important;
+    margin-top: 70px !important;
+  }
+
+  .dashboard-navigation {
+    justify-content: center !important;
+  }
+
+  .button-white {
+    padding: 0 !important;
+    width: 50px !important;
+    color: transparent !important;
+    background-image: url("/images/settings-black.png") !important;
+    background-size: 22px !important;
+    background-position: 50%;
+  }
+
+  .button-white option {
+    color: black !important;
+  }
+
+  .dashboard-navigation select {
+    height: 50px;
+    width: 100%;
+    padding: 0 20px !important;
+    background-color: #7f56d9;
+    margin: 0 2px !important;
+    border: 0;
+    color: #ffffff;
+    border-radius: 10px;
+  }
+}
+
+/* Side Navigation */
+
+nav {
+  background-color: var(--Primary);
+  width: 80px;
+  height: 100vh;
+  transition: all 0.5s ease-in-out;
+}
+
+.logo {
+  margin: 15px;
+}
+
+.nav-img {
+  margin: 15px;
+}
+
+.nav-button {
+  display: flex;
+  margin: 15px;
+}
+
+.nav-button span {
+  margin: auto 0;
+}
+
+.nav-button:hover {
+  background-color: var(--Fill);
+}
+
+.userimage {
+  margin: 15px;
+}
+
+nav:hover {
+  width: 300px;
+}
+
+.hidden {
+  display: none;
+}
+
+nav:hover img + .hidden {
+  display: block;
+}
+
+nav:hover .bottom-nav .user-bar a + .hidden {
+  display: block;
+}
+
+.nav-text {
+  color: white;
+  margin: auto;
+}
+
+.nav-user-text {
+  color: white;
+  font-size: 12px;
+  margin: auto auto auto 0;
+}
+
+.nav-user-text span {
+  color: #e9d7fe;
+}
+
+.nav-button:focus {
+  background-color: var(--Fill);
+}
+
+/* Dashboard */
+
+.dashboard {
+  background-color: white;
+  width: 100%;
+  margin-top: 10px;
+  border-top-left-radius: 20px;
+  padding: 1.5em;
+}
+
+.dashboard p {
+  color: #475467;
+}
+
+.form-select {
+  width: auto;
+  background-image: url("/images/dropdown.png");
+  background-size: 10px;
+}
+
+.form-select .button-white {
+  background-image: none;
+  background-size: 10px;
+}
+
+.dashboard-navigation select {
+  height: 50px;
+  background-color: #7f56d9;
+  margin: 0 5px;
+  border: 0;
+  color: #ffffff;
+  border-radius: 10px;
+}
+
+.dashboard-navigation .button-white {
+  padding: 0px 30px;
+  color: black;
+  background-color: #ffffff;
+  border: 1px #d0d5dd solid;
+}
+
+/* Dashboard Data */
